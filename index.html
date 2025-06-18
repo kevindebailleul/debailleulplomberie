@@ -1,68 +1,86 @@
+Pas encore, mais je peux intégrer tout ça pour toi dans la page, en ajoutant des sections claires et bien présentées.
+
+Voici une version enrichie avec les éléments que tu as mentionnés :
+
+---
+
+```html
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kevin Debailleul, artisan plombier à Toulon. Dépannage urgent 24h/24, 7j/7. Travaux de plomberie en rénovation et neuf.">
-  <title>Kevin Debailleul - Plombier à Toulon | Dépannage 24h/24</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Plombier à Toulon : Dépannage 24h/24 et travaux de plomberie en neuf et rénovation. Kevin Debailleul, artisan réactif et sérieux." />
+  <title>Kevin Debailleul - Artisan Plombier à Toulon</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background-color: #f9f9f9;
+      background-color: #fafafa;
       color: #333;
-    }
-    header {
-      background: #0077aa;
-      color: white;
       padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
       text-align: center;
+      color: #007acc;
     }
-    header h1 {
-      margin: 0;
-      font-size: 1.8em;
+    .contact, .services, .about, .zone {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #f2f2f2;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    header p {
-      margin: 5px 0;
-      font-size: 1.1em;
+    .contact p, .services ul, .about p, .zone p {
+      margin: 10px 0;
     }
-    .btn-call {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 12px 20px;
-      background-color: #00cc66;
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    form {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    form input[type="submit"] {
+      background-color: #007acc;
       color: white;
-      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px 20px;
       font-weight: bold;
-      border-radius: 5px;
     }
-    section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      color: #0077aa;
-    }
-    footer {
-      background: #eee;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
+    form input[type="submit"]:hover {
+      background-color: #005f99;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>KEVIN DEBAILLEUL – ARTISAN PLOMBIER</h1>
-    <p>Dépannage 24h/24 – 7j/7 sur l’aire toulonnaise</p>
-    <a href="tel:0622818598" class="btn-call">📞 Appeler maintenant : 06 22 81 85 98</a>
-  </header>
+  <h1>Kevin Debailleul</h1>
+  <h2>Artisan Plombier à Toulon</h2>
 
-  <section>
+  <div class="contact">
+    <p>🚨 Dépannage plomberie 7j/7 - 24h/24 sur l’aire toulonnaise</p>
+    <p>📞 Téléphone : <strong>06.22.81.85.98</strong></p>
+    <p>📩 Email : <a href="mailto:contact@debailleulplomberie.com">contact@debailleulplomberie.com</a></p>
+  </div>
+
+  <section class="services">
     <h2>Services proposés</h2>
     <ul>
       <li>Dépannage plomberie en urgence (fuites, pannes, etc.)</li>
@@ -71,63 +89,46 @@
     </ul>
   </section>
 
-  <section>
+  <section class="about">
     <h2>Qui suis-je ?</h2>
     <p>
       Artisan plombier expérimenté, je suis réactif, disponible et rigoureux. J’interviens rapidement sur toute l’aire toulonnaise, que ce soit pour une urgence ou des travaux programmés. Mon objectif : un travail propre, durable et soigné.
     </p>
   </section>
 
-  <section>
+  <section class="zone">
     <h2>Zone d’intervention</h2>
     <p>
       Toulon et alentours : La Valette du Var, La Garde, Hyères, La Seyne-sur-Mer, Ollioules, Sanary-sur-Mer, etc.
     </p>
   </section>
 
-  <section>
-    <h2>Contact</h2>
-    <p>📞 Téléphone : <a href="tel:0622818598">06 22 81 85 98</a></p>
-    <p>📩 Email : <a href="mailto:contact@debailleulplomberie.com">contact@debailleulplomberie.com</a></p>
-  </section>
-  
-  <style>
-  form {
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 10px;
-    font-family: Arial, sans-serif;
-  }
+  <h2>Formulaire de contact</h2>
+  <form action="mailto:contact@debailleulplomberie.com" method="POST" enctype="text/plain">
+    <label for="nom">Nom :</label><br>
+    <input type="text" id="nom" name="nom" required><br><br>
 
-  form input, form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+    <label for="email">Email :</label><br>
+    <input type="email" id="email" name="email" required><br><br>
 
-  form input[type="submit"] {
-    background-color: #007acc;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
+    <label for="message">Message :</label><br>
+    <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
-  form input[type="submit"]:hover {
-    background-color: #005f99;
-  }
-</style>
-
+    <input type="submit" value="Envoyer">
   </form>
-  
-  <footer>
-    <p>© 2025 Kevin Debailleul – Artisan plombier</p>
-    <p>SIRET : 801 151 341 00030 </p>
-  </footer>
+
+  <script>
+    document.querySelector('form').addEventListener('submit', function() {
+      setTimeout(function() {
+        alert("Merci, votre message a été pris en compte !");
+      }, 500);
+    });
+  </script>
 
 </body>
 </html>
+```
+
+---
+
+Tu veux que je te prépare aussi une version avec carte Google Maps intégrée ?
