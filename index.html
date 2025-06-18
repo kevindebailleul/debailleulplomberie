@@ -90,7 +90,21 @@
     <p>📞 Téléphone : <a href="tel:0622818598">06 22 81 85 98</a></p>
     <p>📩 Email : <a href="mailto:contact@debailleulplomberie.com">contact@debailleulplomberie.com</a></p>
   </section>
+  
+<h2>Formulaire de contact</h2>
+<form action="mailto:contact@debailleulplomberie.com" method="POST" enctype="text/plain">
+  <label for="nom">Nom :</label><br>
+  <input type="text" id="nom" name="nom" required><br><br>
 
+  <label for="email">Email :</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="message">Message :</label><br>
+  <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+  <input type="submit" value="Envoyer">
+</form>
+  
   <footer>
     <p>© 2025 Kevin Debailleul – Artisan plombier</p>
     <p>SIRET : (à compléter) – Site vitrine</p>
